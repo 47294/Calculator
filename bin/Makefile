@@ -152,6 +152,30 @@ calculator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/build
 .PHONY : calculator/fast
 
+src/factorial.o: src/factorial.c.o
+.PHONY : src/factorial.o
+
+# target to build an object file
+src/factorial.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/src/factorial.c.o
+.PHONY : src/factorial.c.o
+
+src/factorial.i: src/factorial.c.i
+.PHONY : src/factorial.i
+
+# target to preprocess a source file
+src/factorial.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/src/factorial.c.i
+.PHONY : src/factorial.c.i
+
+src/factorial.s: src/factorial.c.s
+.PHONY : src/factorial.s
+
+# target to generate assembly for a file
+src/factorial.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/src/factorial.c.s
+.PHONY : src/factorial.c.s
+
 src/multiple.o: src/multiple.c.o
 .PHONY : src/multiple.o
 
@@ -175,6 +199,30 @@ src/multiple.s: src/multiple.c.s
 src/multiple.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/src/multiple.c.s
 .PHONY : src/multiple.c.s
+
+src/sqrt.o: src/sqrt.c.o
+.PHONY : src/sqrt.o
+
+# target to build an object file
+src/sqrt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/src/sqrt.c.o
+.PHONY : src/sqrt.c.o
+
+src/sqrt.i: src/sqrt.c.i
+.PHONY : src/sqrt.i
+
+# target to preprocess a source file
+src/sqrt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/src/sqrt.c.i
+.PHONY : src/sqrt.c.i
+
+src/sqrt.s: src/sqrt.c.s
+.PHONY : src/sqrt.s
+
+# target to generate assembly for a file
+src/sqrt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/src/sqrt.c.s
+.PHONY : src/sqrt.c.s
 
 tests/multiple.o: tests/multiple.cpp.o
 .PHONY : tests/multiple.o
@@ -200,6 +248,30 @@ tests/multiple.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/multiple.cpp.s
 .PHONY : tests/multiple.cpp.s
 
+tests/usl.o: tests/usl.cpp.o
+.PHONY : tests/usl.o
+
+# target to build an object file
+tests/usl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/usl.cpp.o
+.PHONY : tests/usl.cpp.o
+
+tests/usl.i: tests/usl.cpp.i
+.PHONY : tests/usl.i
+
+# target to preprocess a source file
+tests/usl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/usl.cpp.i
+.PHONY : tests/usl.cpp.i
+
+tests/usl.s: tests/usl.cpp.s
+.PHONY : tests/usl.s
+
+# target to generate assembly for a file
+tests/usl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/usl.cpp.s
+.PHONY : tests/usl.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -211,12 +283,21 @@ help:
 	@echo "... test"
 	@echo "... calculator"
 	@echo "... calculator.test"
+	@echo "... src/factorial.o"
+	@echo "... src/factorial.i"
+	@echo "... src/factorial.s"
 	@echo "... src/multiple.o"
 	@echo "... src/multiple.i"
 	@echo "... src/multiple.s"
+	@echo "... src/sqrt.o"
+	@echo "... src/sqrt.i"
+	@echo "... src/sqrt.s"
 	@echo "... tests/multiple.o"
 	@echo "... tests/multiple.i"
 	@echo "... tests/multiple.s"
+	@echo "... tests/usl.o"
+	@echo "... tests/usl.i"
+	@echo "... tests/usl.s"
 .PHONY : help
 
 

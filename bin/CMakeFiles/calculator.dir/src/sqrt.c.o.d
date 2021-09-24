@@ -1,6 +1,5 @@
-CMakeFiles/calculator.dir/src/multiple.c.o: \
- /dev/calculator/src/multiple.c /usr/include/stdc-predef.h \
- /dev/calculator/src/../includes/zapusk.h /usr/include/stdio.h \
+CMakeFiles/calculator.dir/src/sqrt.c.o: /dev/calculator/src/sqrt.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
  /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
@@ -13,4 +12,10 @@ CMakeFiles/calculator.dir/src/multiple.c.o: \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h
+ /usr/include/bits/floatn-common.h \
+ /dev/calculator/src/../includes/zapusk.h /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h

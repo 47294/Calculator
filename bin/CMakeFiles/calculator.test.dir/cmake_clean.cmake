@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/calculator.test.dir/tests/multiple.cpp.o"
   "CMakeFiles/calculator.test.dir/tests/multiple.cpp.o.d"
+  "CMakeFiles/calculator.test.dir/tests/usl.cpp.o"
+  "CMakeFiles/calculator.test.dir/tests/usl.cpp.o.d"
   "calculator.test"
   "calculator.test.pdb"
   "calculator.test[1]_tests.cmake"

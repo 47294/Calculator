@@ -1,1 +1,1 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,libcalculator.so -o libcalculator.so CMakeFiles/calculator.dir/src/multiple.c.o 
+/usr/bin/cc -fPIC -shared -Wl,-soname,libcalculator.so -o libcalculator.so CMakeFiles/calculator.dir/src/multiple.c.o CMakeFiles/calculator.dir/src/sqrt.c.o CMakeFiles/calculator.dir/src/factorial.c.o 

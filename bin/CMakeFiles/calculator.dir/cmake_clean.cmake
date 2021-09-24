@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/calculator.dir/src/factorial.c.o"
+  "CMakeFiles/calculator.dir/src/factorial.c.o.d"
   "CMakeFiles/calculator.dir/src/multiple.c.o"
   "CMakeFiles/calculator.dir/src/multiple.c.o.d"
+  "CMakeFiles/calculator.dir/src/sqrt.c.o"
+  "CMakeFiles/calculator.dir/src/sqrt.c.o.d"
   "libcalculator.pdb"
   "libcalculator.so"
 )

@@ -1,5 +1,5 @@
-CMakeFiles/calculator.dir/src/multiple.c.o: \
- /dev/calculator/src/multiple.c /usr/include/stdc-predef.h \
+CMakeFiles/calculator.dir/src/factorial.c.o: \
+ /dev/calculator/src/factorial.c /usr/include/stdc-predef.h \
  /dev/calculator/src/../includes/zapusk.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \

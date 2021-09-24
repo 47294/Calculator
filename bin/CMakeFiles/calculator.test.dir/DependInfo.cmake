@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/dev/calculator/tests/multiple.cpp" "CMakeFiles/calculator.test.dir/tests/multiple.cpp.o" "gcc" "CMakeFiles/calculator.test.dir/tests/multiple.cpp.o.d"
+  "/dev/calculator/tests/usl.cpp" "CMakeFiles/calculator.test.dir/tests/usl.cpp.o" "gcc" "CMakeFiles/calculator.test.dir/tests/usl.cpp.o.d"
   )
 
 # Targets to which this target links.
