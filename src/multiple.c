@@ -1,4 +1,4 @@
 #include "../includes/zapusk.h"
-double multiple(double a, double b){
-	return a*b;
+double multi(double a, double b){
+return a * b;
 }

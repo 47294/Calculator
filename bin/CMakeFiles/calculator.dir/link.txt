@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libcalculator.so -o libcalculator.so CMakeFiles/calculator.dir/src/multiple.c.o 
