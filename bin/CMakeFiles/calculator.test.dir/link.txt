@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/calculator.test.dir/tests/multiple.test.cpp.o -o calculator.test  -Wl,-rpath,/dev/calculator/bin libcalculator.so -lgtest -lpthread 
+/usr/bin/c++ -rdynamic CMakeFiles/calculator.test.dir/tests/multiple.cpp.o -o calculator.test  -Wl,-rpath,/dev/calculator/bin libcalculator.so -lgtest -lgtest_main -lpthread 

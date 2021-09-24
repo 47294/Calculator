@@ -2,8 +2,12 @@ cmake_minimum_required(VERSION 3.1)
 
 project(calculator)
 add_library(calculator SHARED src/multiple.c)
-add_executable(calculator.test tests/multiple.test.cpp)
-target_link_libraries(calculator.test calculator gtest pthread)
+enable_testing()
+add_executable(calculator.test tests/multiple.cpp)
+target_link_libraries(calculator.test calculator gtest gtest_main pthread)
+include(GoogleTest)
+gtest_discover_tests(calculator.test)
+
 
 
 

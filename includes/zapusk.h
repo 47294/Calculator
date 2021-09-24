@@ -1,1 +1,1 @@
-double multi();
+double multi(double, double);

@@ -1,4 +1,5 @@
 /dev/calculator/bin/CMakeFiles/rebuild_cache.dir
 /dev/calculator/bin/CMakeFiles/edit_cache.dir
+/dev/calculator/bin/CMakeFiles/test.dir
 /dev/calculator/bin/CMakeFiles/calculator.test.dir
 /dev/calculator/bin/CMakeFiles/calculator.dir

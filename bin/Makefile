@@ -85,6 +85,16 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /dev/calculator/bin/CMakeFiles /dev/calculator/bin//CMakeFiles/progress.marks
@@ -166,29 +176,29 @@ src/multiple.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/src/multiple.c.s
 .PHONY : src/multiple.c.s
 
-tests/multiple.test.o: tests/multiple.test.cpp.o
-.PHONY : tests/multiple.test.o
+tests/multiple.o: tests/multiple.cpp.o
+.PHONY : tests/multiple.o
 
 # target to build an object file
-tests/multiple.test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/multiple.test.cpp.o
-.PHONY : tests/multiple.test.cpp.o
+tests/multiple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/multiple.cpp.o
+.PHONY : tests/multiple.cpp.o
 
-tests/multiple.test.i: tests/multiple.test.cpp.i
-.PHONY : tests/multiple.test.i
+tests/multiple.i: tests/multiple.cpp.i
+.PHONY : tests/multiple.i
 
 # target to preprocess a source file
-tests/multiple.test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/multiple.test.cpp.i
-.PHONY : tests/multiple.test.cpp.i
+tests/multiple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/multiple.cpp.i
+.PHONY : tests/multiple.cpp.i
 
-tests/multiple.test.s: tests/multiple.test.cpp.s
-.PHONY : tests/multiple.test.s
+tests/multiple.s: tests/multiple.cpp.s
+.PHONY : tests/multiple.s
 
 # target to generate assembly for a file
-tests/multiple.test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/multiple.test.cpp.s
-.PHONY : tests/multiple.test.cpp.s
+tests/multiple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculator.test.dir/build.make CMakeFiles/calculator.test.dir/tests/multiple.cpp.s
+.PHONY : tests/multiple.cpp.s
 
 # Help Target
 help:
@@ -198,14 +208,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... calculator"
 	@echo "... calculator.test"
 	@echo "... src/multiple.o"
 	@echo "... src/multiple.i"
 	@echo "... src/multiple.s"
-	@echo "... tests/multiple.test.o"
-	@echo "... tests/multiple.test.i"
-	@echo "... tests/multiple.test.s"
+	@echo "... tests/multiple.o"
+	@echo "... tests/multiple.i"
+	@echo "... tests/multiple.s"
 .PHONY : help
 
 
